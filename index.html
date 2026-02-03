@@ -126,26 +126,28 @@
             }
 
             nav ul {
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: var(--bg-light);
+                display: none;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 2rem;
-                transform: translateX(-100%);
-                transition: transform 0.3s ease;
+                gap: 1rem;
+                width: 100%;
+                padding: 1rem 0;
+                background: var(--bg-light);
+                margin-top: 3rem;
             }
 
             nav ul.active {
-                transform: translateX(0);
+                display: flex;
+            }
+
+            nav ul li {
+                text-align: center;
+                width: 100%;
             }
 
             nav a {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
+                display: block;
+                padding: 0.5rem;
             }
 
             body {
